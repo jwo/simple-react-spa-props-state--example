@@ -50,3 +50,6 @@ article button {
 article button:hover {
   background-color: #2ecc71;
 }
+article button[disabled] {
+  background-color: #95a5a6;
+}
