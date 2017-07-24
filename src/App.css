@@ -1,0 +1,52 @@
+header {
+  background-color: #8e44ad;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.main {
+  display: flex;
+}
+aside {
+  background-color: #bdc3c7;
+  padding: 2em;
+}
+aside a{
+  display: block;
+}
+
+article {
+  padding: 3em;
+  flex: 1;
+}
+
+article .details {
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+article dt, article dd {
+  display: inline-block;
+  width: 50%;
+  margin-left: 0;
+  vertical-align: top;
+  margin-top: 1em;
+}
+
+article button {
+  border: 0;
+  background-color: #27ae60;
+  color: white;
+  padding: 1em 3em;
+  display: block;
+  width: 100%;
+  font-size: 1.2em;
+  border-radius: 8px;
+  cursor: pointer;
+}
+article button:hover {
+  background-color: #2ecc71;
+}
