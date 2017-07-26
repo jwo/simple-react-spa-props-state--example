@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import products from '../data/Products'
 
 export default class Product extends Component {
   constructor(props){
@@ -33,19 +34,21 @@ export default class Product extends Component {
     this.props.handleAddToCart(this.state.quantity)
   }
   render(){
+
+    const product = this.props.product;
     return <div>
-      <h2>{this.props.product.name}</h2>
+      <h2>{product.name}</h2>
 
       <div className="details">
 
-        <img src={this.props.product.img} alt={this.props.product.text}/>
+        <img src={product.img} alt={product.text}/>
 
         <div>
           <dl>
             <dt>Price</dt>
-            <dd>{this.props.product.price}</dd>
+            <dd>{product.price}</dd>
             <dt>Description</dt>
-            <dd>{this.props.product.description}</dd>
+            <dd>{product.description}</dd>
 
 
           <dt><label>Quantity</label></dt>

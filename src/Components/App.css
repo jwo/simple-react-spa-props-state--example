@@ -5,6 +5,9 @@ header {
   align-items: center;
   color: white;
 }
+body {
+  background: pink;
+}
 
 .main {
   display: flex;
@@ -15,6 +18,13 @@ aside {
 }
 aside a{
   display: block;
+  transition: 1s ease;
+}
+aside a.active {
+  font-weight: bold;
+}
+aside a:hover, aside a.active {
+  transform: translateX(5px);
 }
 
 article {
@@ -25,6 +35,10 @@ article {
 article .details {
   display: flex;
   justify-content: flex-start;
+}
+
+article .details img {
+  margin: 2em;
 }
 
 
